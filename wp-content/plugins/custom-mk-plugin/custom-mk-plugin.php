@@ -53,8 +53,8 @@
         'has_archive'        => true,
         'hierarchical'       => 'page-attributes',
         'menu_position'      => 5,
-        'supports'           => array( 'page-attributes' ),
-        'menu_icon'          => 'dashicons-media-audio',
+        'supports'           => array( 'title', 'thumbnail', 'page-attributes' ),
+        'menu_icon'          => 'dashicons-groups',
     );
     register_post_type( 'employee', $args );
 }

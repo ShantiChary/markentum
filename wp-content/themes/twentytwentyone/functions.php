@@ -70,6 +70,7 @@ if ( ! function_exists( 'twenty_twenty_one_setup' ) ) {
 		 */
 		add_theme_support( 'post-thumbnails' );
 		set_post_thumbnail_size( 1568, 9999 );
+		add_image_size('profile_size', 380, 333, true);	
 
 		register_nav_menus(
 			array(
@@ -627,3 +628,5 @@ function twentytwentyone_add_ie_class() {
 	<?php
 }
 add_action( 'wp_footer', 'twentytwentyone_add_ie_class' );
+
+
