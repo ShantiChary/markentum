@@ -15,9 +15,13 @@ On activation of plugin, the 'Employees' menu is displayed in WP-admin.
 
 Create taxonomy templates to display content including custom field for each location
 -
-I created taxonomy templates for each taxonomy, so that I could display information for each location of separate pages. 
+I created taxonomy templates for each taxonomy, so that I could display information for each location on separate pages. 
 I updated the menu to include the taxonomies by enabling the 'Locations' taxonomy in the 'Screen Options', so that the user is able to navigate to the appropriate pages via the menu.
 
 Add code to plugin file to enable ordering of Custom Post Type posts by custom taxonomy in admin area
 -
-To make it easier to view the employees in the 2 locations, I added code to plugin file to sort by taxonomy.
+To make it easier to view the list of employees in the 2 locations in wp-admin, I added code to plugin file to sort by taxonomy.
+
+Create template part to consolidate taxonomy template code add front page to display taxonomy terms
+-
+Added code to include taxonomy terms to the front page as a way to access the taxonomy pages. Also, since the taxonomy templates have same code, I created a template part to store common code to avoid code repetition.
