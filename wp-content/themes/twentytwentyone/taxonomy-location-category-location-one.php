@@ -33,11 +33,11 @@ get_header(); ?>
 					echo '<p>'; ?>
 				
 						<!-- Get and display Employee Title Custom field -->
-					<?
+						<?
 						$field_name = "employee_title";
-						$field = get_field_object($field_name); ?>
-						<?php if( !empty(get_field('employee_title')) ): ?>
-							<p><?php the_field('employee_title'); ?></p>
+						 
+						if( !empty(get_field($field_name)) ): ?>
+							<p><?php the_field($field_name); ?></p>
 						<?php endif;
 
 					echo '</p>';
