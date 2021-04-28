@@ -28,4 +28,4 @@ Added code to include taxonomy terms to the front page as a way to access the ta
 
 Repl taxonomy templates w Custom page templates
 -
-Replaced Taxonomy templates with custom page templates with code to filter based on taxonomy terms. I created pages for the taxonomy terms. I did this as the brief mentioned 'list two different groups of employees for two different fictional long term care facilities on two different WordPress pages'. This way, I am able to add banner image and then display employee information.
+Replaced Taxonomy templates with custom page templates with code to filter based on taxonomy terms. I created pages for the taxonomy terms. I did this as the brief mentioned 'list two different groups of employees for two different fictional long term care facilities on two different WordPress pages'. This way, I am able to add banner image and then display employee information. Replaced menu and front page links to point to the custom pages.
