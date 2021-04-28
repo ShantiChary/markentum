@@ -5927,12 +5927,57 @@ footer {
 }
 
 /* Custom styles */
-.intro-para,
-.location {
-	margin: 20px;
+body {
+	font-family:Arial, Helvetica, sans-serif;
 }
 
-.location {
+.home-page,
+.location-div {
+	width: 100%;
+	margin: 20px auto;
+}
 
+.intro-para {
+	width: 80%;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+.location-section {
 	text-align: center;
 }
+
+.location-div h3 {
+	margin: 50px 0;
+	text-align: center;
+}
+
+.emp-item {
+	margin: 20px;
+	padding: 0 0 10px;
+	border-bottom: 2px solid rgb(65, 64, 64);
+}
+
+.emp-item p {
+	padding: 10px 0 0;
+	font-size: 16px;
+}
+
+.emp-item img {
+    width: 100%; /* maintain width/height aspect ratio */
+    height: 400px; /*I realized this doesnt seem responsive, but no percentages work for me but it appears fine on mobile*/
+
+}
+
+/* Media queries */
+@media only screen 
+  and (min-device-width: 834px) {
+	  .location-section {
+		  	width: 80%;
+			margin: 0 auto;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: auto;
+
+	  }
+  }

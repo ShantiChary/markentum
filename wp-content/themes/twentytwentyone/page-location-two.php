@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Location one
+ * Template Name: Location two
  */
 
 get_header(); ?>
@@ -8,53 +8,53 @@ get_header(); ?>
 <?php
 the_content(); ?>
 
-<section class="location">
-			<?php
-			$args = array(
-				'post_type' => 'employee',
-				'posts_per_page' => -1,
-				'orderby' => 'menu_order',
-				'tax_query' => array(
-					array(
-						'taxonomy' => 'location-category',
-						'field' => 'slug',
-						'terms' => 'location-two'
+<div class="location-div">
+	<h3>Meet the team</h3>
+	<section class="location-section">
+				<?php
+				$args = array(
+					'post_type' => 'employee',
+					'posts_per_page' => -1,
+					'tax_query' => array(
+						array(
+							'taxonomy' => 'location-category',
+							'field' => 'slug',
+							'terms' => 'location-two'
+						)
 					)
-				)
-			);
+				);
 
-			$location2 = new WP_Query($args);
+				$location1 = new WP_Query($args);
 
-			if($location2->have_posts()){ ?>
-
-				<h3>Meet the team</h3>
-
-				<?php 
-				while($location2->have_posts()){
-					$location2->the_post();
-					echo '<article class="emp-item">'; ?>
-
-					<?php the_post_thumbnail('medium'); ?>
-
-					<!-- Get and display Employee Title Custom field -->
-					<?
-					$field_name = "employee_title";
+				if($location1->have_posts()){ ?>
 					
-					if( !empty(get_field($field_name)) ): ?>
-						<p><?php the_field($field_name); ?></p>
-					<?php endif;
+					<?php 
+					while($location1->have_posts()){
+						$location1->the_post();
 
-					the_title();
+						echo '<div class="emp-container">';
+							echo '<article class="emp-item">'; 
 
-					echo '</article>';
+									$image_size = 'profile_size';
+									the_post_thumbnail($image_size); ?>
+
+									<!-- Get and display Employee Title Custom field -->
+									<?
+									$field_name = "employee_title";
+									
+									if( !empty(get_field($field_name)) ): ?>
+										<p><?php the_field($field_name); ?></p>
+									<?php endif; ?>
+
+									<h5><?php the_title(); ?></h5>
+
+							<?php echo '</article>';
+						echo '</div>';
+					}
+					wp_reset_postdata();
 				}
-				wp_reset_postdata();
-			}
-			?>
-</section>
+				?>
+	</section>
 </div>
-
-
-
 
 <?php get_footer(); ?>
