@@ -5925,3 +5925,14 @@ footer {
 .is-IE .post-thumbnail .wp-post-image {
 	min-width: auto;
 }
+
+/* Custom styles */
+.intro-para,
+.location {
+	margin: 20px;
+}
+
+.location {
+
+	text-align: center;
+}

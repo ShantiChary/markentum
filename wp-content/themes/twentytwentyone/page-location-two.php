@@ -34,17 +34,17 @@ the_content(); ?>
 					$location2->the_post();
 					echo '<article class="emp-item">'; ?>
 
+					<?php the_post_thumbnail('medium'); ?>
+
 					<!-- Get and display Employee Title Custom field -->
 					<?
 					$field_name = "employee_title";
-					$size = 'medium';
 					
 					if( !empty(get_field($field_name)) ): ?>
 						<p><?php the_field($field_name); ?></p>
 					<?php endif;
 
 					the_title();
-					the_post_thumbnail('large');
 
 					echo '</article>';
 				}

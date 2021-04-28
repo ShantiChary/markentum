@@ -38,19 +38,19 @@ the_content(); ?>
 					$location1->the_post();
 					echo '<article class="emp-item">'; ?>
 
+					<?php the_post_thumbnail('large'); ?>
+
 					<!-- Get and display Employee Title Custom field -->
 					<?
 					$field_name = "employee_title";
-					$size = 'medium';
 					
 					if( !empty(get_field($field_name)) ): ?>
 						<p><?php the_field($field_name); ?></p>
-					<?php endif;
+					<?php endif; ?>
 
-					the_title();
-					the_post_thumbnail('large');
+					<p><?php the_title(); ?></p>
 
-					echo '</article>';
+					<?php echo '</article>';
 				}
 				wp_reset_postdata();
 			}
