@@ -51,7 +51,7 @@
         'rewrite'            => array( 'slug' => 'employees' ),
         'capability_type'    => 'post',
         'has_archive'        => true,
-        'hierarchical'       => 'page-attributes',
+        'hierarchical'       => false,
         'menu_position'      => 5,
         'supports'           => array( 'title', 'thumbnail', 'page-attributes' ),
         'menu_icon'          => 'dashicons-groups',
@@ -105,12 +105,12 @@ function mk_register_taxonomies() {
 //--------------------------------------------------------------
 // Odering Custom posts by Taxonomy
 //--------------------------------------------------------------
- add_filter("manage_edit-employee_sortable_columns", 'employee_sort');
- function employee_sort($columns) {
-    $custom = array(
-        'taxonomy-location-category' => 'taxonomy-location-category'
-    );
-    return wp_parse_args($custom, $columns);
- }
+//  add_filter("manage_edit-employee_sortable_columns", 'employee_sort');
+//  function employee_sort($columns) {
+//     $custom = array(
+//         'taxonomy-location-category' => 'taxonomy-location-category'
+//     );
+//     return wp_parse_args($custom, $columns);
+//  }
 
 

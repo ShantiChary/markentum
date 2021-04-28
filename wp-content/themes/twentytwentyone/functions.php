@@ -629,4 +629,9 @@ function twentytwentyone_add_ie_class() {
 }
 add_action( 'wp_footer', 'twentytwentyone_add_ie_class' );
 
+add_action( 'admin_init', 'posts_order' );
 
+function posts_order() 
+{
+    add_post_type_support( 'post', 'page-attributes' );
+}
