@@ -25,3 +25,7 @@ To make it easier to view the list of employees in the 2 locations in wp-admin, 
 Create template part to consolidate taxonomy template code add front page to display taxonomy terms
 -
 Added code to include taxonomy terms to the front page as a way to access the taxonomy pages. Also, since the taxonomy templates have same code, I created a template part to store common code to avoid code repetition.
+
+Repl taxonomy templates w Custom page templates
+-
+Replaced Taxonomy templates with custom page templates with code to filter based on taxonomy terms. I created pages for the taxonomy terms. I did this as the brief mentioned 'list two different groups of employees for two different fictional long term care facilities on two different WordPress pages'. This way, I am able to add banner image and then display employee information.
