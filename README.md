@@ -35,4 +35,6 @@ Add code to display custom template content and add css styles
 Used WordPress loop and terms to filter and display employees by location. Added banner images to custom templates and some basic
 css styling.
 
-
+Add css styles and grid for location pages
+-
+Use grid to display team members for larger screens
