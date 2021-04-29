@@ -29,3 +29,16 @@ Add code to include taxonomy terms to the front page as a way to access the taxo
 Repl taxonomy templates w Custom page templates
 -
 Replace Taxonomy templates with custom page templates with code to filter based on taxonomy terms created pages for the taxonomy terms, as the brief mentioned 'list two different groups of employees for two different fictional long term care facilities on two different WordPress pages'. This way, user is able to add banner image and display employee information. Replace menu and front page links to point to the custom pages.
+
+Add code to display custom template content and add css styles
+-
+Used WordPress loop and terms to filter and display employees by location. Added banner images to custom templates and some basic
+css styling.
+
+Add css styles and grid for location pages
+-
+Use grid to display team members for larger screens
+
+Notes
+-
+To set the order that the employees are displayed in, easily add a new employee at any point in the order without needing to adjust every other employee listed for a community and to easily rearrange the order of employees, I used the 'Post Types Order' plugin.
