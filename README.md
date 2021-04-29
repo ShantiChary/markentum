@@ -39,5 +39,6 @@ Add css styles and grid for location pages
 -
 Use grid to display team members for larger screens
 
-Notes:
+Notes
+-
 To set the order that the employees are displayed in, easily add a new employee at any point in the order without needing to adjust every other employee listed for a community and to easily rearrange the order of employees, I used the 'Post Types Order' plugin.
