@@ -35,8 +35,7 @@ the_content(); ?>
 						echo '<div class="emp-container">';
 							echo '<article class="emp-item">'; 
 
-									$image_size = 'profile_size';
-									the_post_thumbnail($image_size); ?>
+									the_post_thumbnail('profile_size'); ?>
 
 									<!-- Get and display Employee Title Custom field -->
 									<?
